@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    One share ({{ quote.symbol }}) {{ quote.name }} = {{quote.price | usd}}
+{% endblock %}
